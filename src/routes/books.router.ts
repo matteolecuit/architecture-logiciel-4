@@ -31,7 +31,12 @@ booksRouter.post("/", (req, res) => {
     res.status(400).send(error.message);
   }
 });
-
+/**
+ * @openapi
+ * /books:
+ *   put:
+ *     summary: Edit a book
+ */
 booksRouter.put("/:bookID", (req, res) => {
   try {
     const book = booksService.updateBook(req.params.bookID, req.body);
@@ -41,6 +46,12 @@ booksRouter.put("/:bookID", (req, res) => {
   }
 });
 
+/**
+ * @openapi
+ * /books:
+ *   delete:
+ *     summary: Delete a book
+ */
 booksRouter.delete("/:bookID", (req: any, res) => {
   try {
     booksService.deleteBook(req.params.bookID, req.book.id);

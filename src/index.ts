@@ -6,6 +6,7 @@ import { authenticateToken } from "./authentication";
 const app = express();
 const port = 3000; // default port to listen
 const dotenv = require("dotenv");
+
 dotenv.config();
 
 // middleware used to parse incoming requests with JSON payloads
@@ -50,7 +51,6 @@ const swaggerDefinition: any = {
     },
   ],
 };
-
 const options = {
   swaggerDefinition,
   // Paths to files containing OpenAPI definitions

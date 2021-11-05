@@ -23,7 +23,6 @@ usersRouter.get("/", (req, res) => {
  * /users:
  *   post:
  *     summary: Create a new user
- *     description: creates a new user
  */
 usersRouter.post("/", (req, res) => {
   try {
@@ -34,6 +33,12 @@ usersRouter.post("/", (req, res) => {
   }
 });
 
+/**
+ * @openapi
+ * /users:
+ *   put:
+ *     summary: Edit a user
+ */
 usersRouter.put("/:userID", (req, res) => {
   try {
     const user = usersService.updateUser(req.params.userID, req.body);
@@ -43,6 +48,12 @@ usersRouter.put("/:userID", (req, res) => {
   }
 });
 
+/**
+ * @openapi
+ * /users:
+ *   delete:
+ *     summary: Delete a user
+ */
 usersRouter.delete("/:userID", (req: any, res) => {
   try {
     usersService.deleteUser(req.params.userID, req.user.id);
