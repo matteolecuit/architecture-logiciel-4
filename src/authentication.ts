@@ -5,14 +5,14 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 export const authenticateToken = (req: any, res: any, next: any) => {
-  const { err, user } = getToken(req);
+  const { err, user } = getUserFromToken(req);
   if (err) res.sendStatus(403);
   req.user = user;
   next();
 };
 
 export const authenticateAdminToken = (req: any, res: any, next: any) => {
-  const { err, user } = getToken(req);
+  const { err, user } = getUserFromToken(req);
   if (err) {
     res.sendStatus(403);
   }
@@ -23,7 +23,7 @@ export const authenticateAdminToken = (req: any, res: any, next: any) => {
   next();
 };
 
-const getToken = (req: any): { user: UserModel; err: Error } => {
+const getUserFromToken = (req: any): { user: UserModel; err: Error } => {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(" ")[1];
 
