@@ -35,8 +35,8 @@ export class BooksService {
     return this.bookDAO.delete(bookID);
   }
 
-  public updateBook(book: BookModel): BookModel {
-    const existingBook = this.bookDAO.getByID(book.id);
+  public updateBook(bookId: string, book: BookModel): BookModel {
+    const existingBook = this.bookDAO.getByID(bookId);
     if (!existingBook) {
       throw new UnknownBookError("unknown book");
     }

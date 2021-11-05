@@ -35,8 +35,8 @@ export class UsersService {
     return this.userDAO.delete(userID);
   }
 
-  public updateUser(user: UserModel): UserModel {
-    const existingUser = this.userDAO.getByID(user.id);
+  public updateUser(userId: string, user: UserModel): UserModel {
+    const existingUser = this.userDAO.getByID(userId);
     if (!existingUser) {
       throw new UnknownUserError("unknown user");
     }

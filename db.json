@@ -299,6 +299,17 @@
                 "administrator"
             ],
             "id": "4febb635-849e-459f-9738-5bb648e4b2c0"
+        },
+        {
+            "firstName": "postman3",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "3229abaf-bbb1-4e98-85a1-f1a398a227ec",
+            "passwoerd": "test2"
         }
     ]
 }

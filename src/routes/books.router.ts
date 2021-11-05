@@ -34,7 +34,7 @@ booksRouter.post("/", (req, res) => {
 
 booksRouter.put("/:bookID", (req, res) => {
   try {
-    const book = booksService.updateBook(req.body);
+    const book = booksService.updateBook(req.params.bookID, req.body);
     res.status(200).send(book);
   } catch (error) {
     res.status(400).send(error.message);

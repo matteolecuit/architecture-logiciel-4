@@ -34,7 +34,7 @@ usersRouter.post("/", (req, res) => {
 
 usersRouter.put("/:userID", (req, res) => {
   try {
-    const user = usersService.updateUser(req.body);
+    const user = usersService.updateUser(req.params.userID, req.body);
     res.status(200).send(user);
   } catch (error) {
     res.status(400).send(error.message);
