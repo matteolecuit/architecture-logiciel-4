@@ -35,7 +35,7 @@ usersRouter.post("/", (req, res) => {
 
 /**
  * @openapi
- * /users:
+ * /users/:userID:
  *   put:
  *     summary: Edit a user
  */
@@ -50,7 +50,7 @@ usersRouter.put("/:userID", (req, res) => {
 
 /**
  * @openapi
- * /users:
+ * /users/:userID:
  *   delete:
  *     summary: Delete a user
  */

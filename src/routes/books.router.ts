@@ -33,7 +33,7 @@ booksRouter.post("/", (req, res) => {
 });
 /**
  * @openapi
- * /books:
+ * /books/:bookID:
  *   put:
  *     summary: Edit a book
  */
@@ -48,7 +48,7 @@ booksRouter.put("/:bookID", (req, res) => {
 
 /**
  * @openapi
- * /books:
+ * /books/:bookID:
  *   delete:
  *     summary: Delete a book
  */
