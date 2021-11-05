@@ -1,8 +1,10 @@
 import { Router } from "express";
+import jwt from "express-jwt";
 import { UnknownUserError } from "../errors/unknown-user.error";
 import { UsersService } from "../services/users.service";
 const usersRouter = Router();
-
+const dotenv = require("dotenv");
+dotenv.config();
 const usersService = new UsersService();
 
 /**
@@ -11,10 +13,15 @@ const usersService = new UsersService();
  *   get:
  *     summary: Retrieve a list of users
  */
-usersRouter.get("/", (req, res) => {
-  const users = usersService.getAllUsers();
-  res.status(200).send(users);
-});
+usersRouter.get(
+  "/",
+  jwt({ secret: process.env.TOKEN_KEY, algorithms: ["HS256"] }),
+  (req, res) => {
+    console.log(req.user);
+    const users = usersService.getAllUsers();
+    res.status(200).send(users);
+  }
+);
 
 /**
  * @openapi
