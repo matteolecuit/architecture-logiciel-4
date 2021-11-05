@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { authenticateAdminToken, authenticateToken } from "../authentication";
 import { UnknownUserError } from "../errors/unknown-user.error";
 import { UsersService } from "../services/users.service";
 
@@ -13,7 +14,7 @@ const usersService = new UsersService();
  *   get:
  *     summary: Retrieve a list of users
  */
-usersRouter.get("/", (req, res) => {
+usersRouter.get("/", authenticateAdminToken, (req, res) => {
   const users = usersService.getAllUsers();
   res.status(200).send(users);
 });
@@ -39,7 +40,7 @@ usersRouter.post("/", (req, res) => {
  *   put:
  *     summary: Edit a user
  */
-usersRouter.put("/:userID", (req, res) => {
+usersRouter.put("/:userID", authenticateToken, (req, res) => {
   try {
     const user = usersService.updateUser(req.params.userID, req.body);
     res.status(200).send(user);
@@ -54,7 +55,7 @@ usersRouter.put("/:userID", (req, res) => {
  *   delete:
  *     summary: Delete a user
  */
-usersRouter.delete("/:userID", (req: any, res) => {
+usersRouter.delete("/:userID", authenticateToken, (req: any, res) => {
   try {
     usersService.deleteUser(req.params.userID, req.user.id);
   } catch (error) {

@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { authenticateAdminToken } from "../authentication";
 import { UnknownBookError } from "../errors/unknown-book.error";
 import { BooksService } from "../services/books.service";
 const booksRouter = Router();
@@ -23,7 +24,7 @@ booksRouter.get("/", (req, res) => {
  *     summary: Create a new book
  *     description: creates a new book
  */
-booksRouter.post("/", (req, res) => {
+booksRouter.post("/", authenticateAdminToken, (req, res) => {
   try {
     const book = booksService.createBook(req.body);
     res.status(200).send(book);
@@ -37,7 +38,7 @@ booksRouter.post("/", (req, res) => {
  *   put:
  *     summary: Edit a book
  */
-booksRouter.put("/:bookID", (req, res) => {
+booksRouter.put("/:bookID", authenticateAdminToken, (req, res) => {
   try {
     const book = booksService.updateBook(req.params.bookID, req.body);
     res.status(200).send(book);
@@ -52,7 +53,7 @@ booksRouter.put("/:bookID", (req, res) => {
  *   delete:
  *     summary: Delete a book
  */
-booksRouter.delete("/:bookID", (req: any, res) => {
+booksRouter.delete("/:bookID", authenticateAdminToken, (req: any, res) => {
   try {
     booksService.deleteBook(req.params.bookID, req.book.id);
   } catch (error) {
