@@ -1,19 +1,18 @@
 import express from "express";
-import jwt from "express-jwt";
 import usersRouter from "./routes/users.router";
 import loginRouter from "./routes/login.router";
 import booksRouter from "./routes/books.router";
+import { authenticateToken } from "./authentication";
 const app = express();
 const port = 3000; // default port to listen
 const dotenv = require("dotenv");
-
 dotenv.config();
 
 // middleware used to parse incoming requests with JSON payloads
 app.use(express.json());
 
-app.use("/api/users", usersRouter);
-app.use("/api/books", booksRouter);
+app.use("/api/users", authenticateToken, usersRouter);
+app.use("/api/books", authenticateToken, booksRouter);
 app.use("/api/login", loginRouter);
 
 // swagger configuration
