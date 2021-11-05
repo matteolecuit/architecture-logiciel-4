@@ -1,124 +1,304 @@
 {
-  "messages": [
-    {
-      "id": "hello-world",
-      "title": "Hello World",
-      "content": "Welcome to your REST API !"
-    },
-    {
-      "id": "hello-state",
-      "title": "Hello State",
-      "content": "Welcome to your REST API !"
-    }
-  ],
-  "books": [
-    {
-      "id": "2b415ce5-d11d-441c-925f-edaea447efa3",
-      "isbn": "9781593279509",
-      "title": "Eloquent JavaScript, Third Edition",
-      "subtitle": "A Modern Introduction to Programming",
-      "author": "Marijn Haverbeke",
-      "published": "2018-12-04T00:00:00.000Z",
-      "publisher": "No Starch Press",
-      "pages": 472,
-      "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
-      "website": "http://eloquentjavascript.net/"
-    },
-    {
-      "id": "536a9df9-3bb9-4426-a1bc-2a7ce08c4c9e",
-      "isbn": "9781491943533",
-      "title": "Practical Modern JavaScript",
-      "subtitle": "Dive into ES6 and the Future of JavaScript",
-      "author": "Nicolás Bevacqua",
-      "published": "2017-07-16T00:00:00.000Z",
-      "publisher": "O'Reilly Media",
-      "pages": 334,
-      "description": "To get the most out of modern JavaScript, you need learn the latest features of its parent specification, ECMAScript 6 (ES6). This book provides a highly practical look at ES6, without getting lost in the specification or its implementation details.",
-      "website": "https://github.com/mjavascript/practical-modern-javascript"
-    },
-    {
-      "id": "f99d5969-0e1c-44a8-b15f-04aac97100f3",
-      "isbn": "9781593277574",
-      "title": "Understanding ECMAScript 6",
-      "subtitle": "The Definitive Guide for JavaScript Developers",
-      "author": "Nicholas C. Zakas",
-      "published": "2016-09-03T00:00:00.000Z",
-      "publisher": "No Starch Press",
-      "pages": 352,
-      "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that ECMAScript 6 brings to JavaScript.",
-      "website": "https://leanpub.com/understandinges6/read"
-    },
-    {
-      "id": "5a2b3c32-f6fe-43af-93dd-b0e27eea5bd6",
-      "isbn": "9781449365035",
-      "title": "Speaking JavaScript",
-      "subtitle": "An In-Depth Guide for Programmers",
-      "author": "Axel Rauschmayer",
-      "published": "2014-04-08T00:00:00.000Z",
-      "publisher": "O'Reilly Media",
-      "pages": 460,
-      "description": "Like it or not, JavaScript is everywhere these days -from browser to server to mobile- and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
-      "website": "http://speakingjs.com/"
-    },
-    {
-      "id": "ead01a66-4b9a-4649-a39b-ea130d688336",
-      "isbn": "9781449331818",
-      "title": "Learning JavaScript Design Patterns",
-      "subtitle": "A JavaScript and jQuery Developer's Guide",
-      "author": "Addy Osmani",
-      "published": "2012-08-30T00:00:00.000Z",
-      "publisher": "O'Reilly Media",
-      "pages": 254,
-      "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
-      "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
-    },
-    {
-      "id": "83893960-f7fd-4744-b184-81caeaa09fa5",
-      "isbn": "9798602477429",
-      "title": "You Don't Know JS Yet",
-      "subtitle": "Get Started",
-      "author": "Kyle Simpson",
-      "published": "2020-01-28T00:00:00.000Z",
-      "publisher": "Independently published",
-      "pages": 143,
-      "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
-      "website": "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/get-started"
-    },
-    {
-      "id": "602c98ef-e385-4c68-bcca-e7c953ffb24d",
-      "isbn": "9781484200766",
-      "title": "Pro Git",
-      "subtitle": "Everything you neeed to know about Git",
-      "author": "Scott Chacon and Ben Straub",
-      "published": "2014-11-18T00:00:00.000Z",
-      "publisher": "Apress; 2nd edition",
-      "pages": 458,
-      "description": "Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.",
-      "website": "https://git-scm.com/book/en/v2"
-    },
-    {
-      "id": "2e71e61e-1d7e-4cbe-9798-e6b60c701712",
-      "isbn": "9781484242216",
-      "title": "Rethinking Productivity in Software Engineering",
-      "subtitle": "",
-      "author": "Caitlin Sadowski, Thomas Zimmermann",
-      "published": "2019-05-11T00:00:00.000Z",
-      "publisher": "Apress",
-      "pages": 310,
-      "description": "Get the most out of this foundational reference and improve the productivity of your software teams. This open access book collects the wisdom of the 2017 \"Dagstuhl\" seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity.",
-      "website": "https://doi.org/10.1007/978-1-4842-4221-6"
-    }
-  ],
-  "users": [
-    {
-      "firstName": "postman",
-      "password": "test",
-      "lastName": "postman",
-      "email": "postman@fake.com",
-      "roles": [
-        "administrator"
-      ],
-      "id": "3ffda8e7-06a3-4154-96b6-e39260048200"
-    }
-  ]
+    "messages": [
+        {
+            "id": "hello-world",
+            "title": "Hello World",
+            "content": "Welcome to your REST API !"
+        },
+        {
+            "id": "hello-state",
+            "title": "Hello State",
+            "content": "Welcome to your REST API !"
+        }
+    ],
+    "books": [
+        {
+            "id": "2b415ce5-d11d-441c-925f-edaea447efa3",
+            "isbn": "9781593279509",
+            "title": "Eloquent JavaScript, Third Edition",
+            "subtitle": "A Modern Introduction to Programming",
+            "author": "Marijn Haverbeke",
+            "published": "2018-12-04T00:00:00.000Z",
+            "publisher": "No Starch Press",
+            "pages": 472,
+            "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.",
+            "website": "http://eloquentjavascript.net/"
+        },
+        {
+            "id": "536a9df9-3bb9-4426-a1bc-2a7ce08c4c9e",
+            "isbn": "9781491943533",
+            "title": "Practical Modern JavaScript",
+            "subtitle": "Dive into ES6 and the Future of JavaScript",
+            "author": "Nicolás Bevacqua",
+            "published": "2017-07-16T00:00:00.000Z",
+            "publisher": "O'Reilly Media",
+            "pages": 334,
+            "description": "To get the most out of modern JavaScript, you need learn the latest features of its parent specification, ECMAScript 6 (ES6). This book provides a highly practical look at ES6, without getting lost in the specification or its implementation details.",
+            "website": "https://github.com/mjavascript/practical-modern-javascript"
+        },
+        {
+            "id": "f99d5969-0e1c-44a8-b15f-04aac97100f3",
+            "isbn": "9781593277574",
+            "title": "Understanding ECMAScript 6",
+            "subtitle": "The Definitive Guide for JavaScript Developers",
+            "author": "Nicholas C. Zakas",
+            "published": "2016-09-03T00:00:00.000Z",
+            "publisher": "No Starch Press",
+            "pages": 352,
+            "description": "ECMAScript 6 represents the biggest update to the core of JavaScript in the history of the language. In Understanding ECMAScript 6, expert developer Nicholas C. Zakas provides a complete guide to the object types, syntax, and other exciting changes that ECMAScript 6 brings to JavaScript.",
+            "website": "https://leanpub.com/understandinges6/read"
+        },
+        {
+            "id": "5a2b3c32-f6fe-43af-93dd-b0e27eea5bd6",
+            "isbn": "9781449365035",
+            "title": "Speaking JavaScript",
+            "subtitle": "An In-Depth Guide for Programmers",
+            "author": "Axel Rauschmayer",
+            "published": "2014-04-08T00:00:00.000Z",
+            "publisher": "O'Reilly Media",
+            "pages": 460,
+            "description": "Like it or not, JavaScript is everywhere these days -from browser to server to mobile- and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
+            "website": "http://speakingjs.com/"
+        },
+        {
+            "id": "ead01a66-4b9a-4649-a39b-ea130d688336",
+            "isbn": "9781449331818",
+            "title": "Learning JavaScript Design Patterns",
+            "subtitle": "A JavaScript and jQuery Developer's Guide",
+            "author": "Addy Osmani",
+            "published": "2012-08-30T00:00:00.000Z",
+            "publisher": "O'Reilly Media",
+            "pages": 254,
+            "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
+            "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+        },
+        {
+            "id": "83893960-f7fd-4744-b184-81caeaa09fa5",
+            "isbn": "9798602477429",
+            "title": "You Don't Know JS Yet",
+            "subtitle": "Get Started",
+            "author": "Kyle Simpson",
+            "published": "2020-01-28T00:00:00.000Z",
+            "publisher": "Independently published",
+            "pages": 143,
+            "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
+            "website": "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/get-started"
+        },
+        {
+            "id": "602c98ef-e385-4c68-bcca-e7c953ffb24d",
+            "isbn": "9781484200766",
+            "title": "Pro Git",
+            "subtitle": "Everything you neeed to know about Git",
+            "author": "Scott Chacon and Ben Straub",
+            "published": "2014-11-18T00:00:00.000Z",
+            "publisher": "Apress; 2nd edition",
+            "pages": 458,
+            "description": "Pro Git (Second Edition) is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.",
+            "website": "https://git-scm.com/book/en/v2"
+        },
+        {
+            "id": "2e71e61e-1d7e-4cbe-9798-e6b60c701712",
+            "isbn": "9781484242216",
+            "title": "Rethinking Productivity in Software Engineering",
+            "subtitle": "",
+            "author": "Caitlin Sadowski, Thomas Zimmermann",
+            "published": "2019-05-11T00:00:00.000Z",
+            "publisher": "Apress",
+            "pages": 310,
+            "description": "Get the most out of this foundational reference and improve the productivity of your software teams. This open access book collects the wisdom of the 2017 \"Dagstuhl\" seminar on productivity in software engineering, a meeting of community leaders, who came together with the goal of rethinking traditional definitions and measures of productivity.",
+            "website": "https://doi.org/10.1007/978-1-4842-4221-6"
+        },
+        {
+            "isbn": "9798602477429",
+            "title": "You Don't Know JS Yet123123123",
+            "subtitle": "Get Started",
+            "author": "Kyle Sim3213123pson",
+            "published": "2020-01-28T00:00:00.000Z",
+            "publisher": "Independently published",
+            "pages": 143,
+            "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
+            "website": "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/get-started",
+            "id": "15081992-b2b1-412f-8cad-226a7cf6d38a"
+        },
+        {
+            "isbn": "9798602477429",
+            "title": "You Don't Know JS Yet123123123",
+            "subtitle": "Get Started",
+            "author": "Kyle Sim3213123pson",
+            "published": "2020-01-28T00:00:00.000Z",
+            "publisher": "Independently published",
+            "pages": 143,
+            "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
+            "website": "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/get-started",
+            "id": "b65a2f40-9d7c-4981-8cc4-a99c4c110e7b"
+        }
+    ],
+    "users": [
+        {
+            "firstName": "postman",
+            "password": "test",
+            "lastName": "postman",
+            "email": "postman@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "3ffda8e7-06a3-4154-96b6-e39260048200"
+        },
+        {
+            "0": {
+                "firstName": "postman2",
+                "password": "test2",
+                "lastName": "postman2",
+                "email": "postman2@fake.com",
+                "roles": [
+                    "administrator"
+                ]
+            },
+            "id": "c55aaf2b-cfaa-42c8-ac3c-674d9a403f51"
+        },
+        {
+            "0": {
+                "firstName": "postman2",
+                "password": "test2",
+                "lastName": "postman2",
+                "email": "postman2@fake.com",
+                "roles": [
+                    "administrator"
+                ]
+            },
+            "id": "d3a8dbda-c38c-4f81-a6a0-8bd3538a1fe2"
+        },
+        {
+            "0": {
+                "firstName": "postman2",
+                "password": "test2",
+                "lastName": "postman2",
+                "email": "postman2@fake.com",
+                "roles": [
+                    "administrator"
+                ]
+            },
+            "id": "357311ed-8cc9-4c35-83ea-9ff2e7005ff4"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "c7339591-6679-4d24-aa3f-5742cfb5a224"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "71f3fe4a-465a-45b3-93c7-2684a1ced5f9"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "e2ca901d-bb9d-42a5-b5fa-26bff36cfefa"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "3041d591-9240-413b-be2f-0ef6b4341003"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "6932e9d0-6064-41f0-9ec4-db0bbe0ba008"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "3ade9ad4-8847-4618-a8bf-d09272485582"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "9f32026e-e7ee-473d-bc4f-e2b74641ecac"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "41a84e92-6a43-4e19-9859-eb3978ae884c"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "ac62522b-5e2d-4da2-a24d-ad32758c4205"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "3fe5d558-790e-4dd8-a456-3bd3047230e4"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "e8a4b046-6021-4466-a325-d11d95ac3f85"
+        },
+        {
+            "firstName": "postman2",
+            "password": "test2",
+            "lastName": "postman2",
+            "email": "postman2@fake.com",
+            "roles": [
+                "administrator"
+            ],
+            "id": "4febb635-849e-459f-9738-5bb648e4b2c0"
+        }
+    ]
 }

@@ -51,17 +51,16 @@ export class BooksService {
   private checkBookToCreateIsValid(book: BookModel) {
     return (
       book &&
-      book.id &&
-      book.isbn &&
-      book.title &&
-      book.subtitle &&
-      book.author &&
-      book.published &&
-      book.publisher &&
-      book.pages &&
-      book.author &&
-      book.description &&
-      book.website
+      !!book.isbn &&
+      !!book.title &&
+      !!book.subtitle &&
+      !!book.author &&
+      !!book.published &&
+      !!book.publisher &&
+      !!book.pages &&
+      !!book.author &&
+      !!book.description &&
+      !!book.website
     );
   }
 }
